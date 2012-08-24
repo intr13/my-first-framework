@@ -5,11 +5,11 @@ Type
 
        StrRazmer       : TsListString;
 
-       buttonRazMatrix : TsButton; {Ç¢Æ§ ™Æ´®Á•·‚¢† „p†¢≠•≠®©}
-       buttonMatrixA   : TsButton; {Ç¢Æ§ å†‚p®ÊÎ "A"}
-       buttonMatrixB   : TsButton; {Ç¢Æ§ å†‚p®ÊÎ "B"}
-       buttonSchet     : TsButton; {P†·Á•‚}
-       buttonExitPr    : TsButton; {ÇÎÂÆ§ ®ß ØpÆ£p†¨¨Î}
+       buttonRazMatrix : TsButton; {–í–≤–æ–¥ –∫–æ–ª–∏—á–µ—Å—Ç–≤–∞ —Ép–∞–≤–Ω–µ–Ω–∏–π}
+       buttonMatrixA   : TsButton; {–í–≤–æ–¥ –ú–∞—Çp–∏—Ü—ã "A"}
+       buttonMatrixB   : TsButton; {–í–≤–æ–¥ –ú–∞—Çp–∏—Ü—ã "B"}
+       buttonSchet     : TsButton; {P–∞—Å—á–µ—Ç}
+       buttonExitPr    : TsButton; {–í—ã—Ö–æ–¥ –∏–∑ –øp–æ–≥p–∞–º–º—ã}
        ButtonOkey      : TsButton;
        ButtonKrexit    : TsButtonExit;
        REl             : array [1..9,1..10] of ^TsReadString;
@@ -59,7 +59,7 @@ Var
   ButtonKrexit.init;
 
   buttonOkey.init;
-  buttonOkey.setstring('èp®≠Ô‚Ï');
+  buttonOkey.setstring('–üp–∏–Ω—è—Ç—å');
 
   buttonRazMatrix.init;
   buttonRazMatrix.setcorxy(10,450);
@@ -67,7 +67,7 @@ Var
   buttonRazMatrix.setlongxy(130,470);
   buttonRazMatrix.SetOptions(1,2,5);
   buttonRazMatrix.SetMoveObject(5,2,5,2);
-  buttonRazMatrix.setstring('äÆ´.ìp†¢≠•≠®©');
+  buttonRazMatrix.setstring('–ö–æ–ª.–£p–∞–≤–Ω–µ–Ω–∏–π');
 
   buttonMatrixA.init;
   buttonMatrixA.setcorxy(135,450);
@@ -75,7 +75,7 @@ Var
   buttonMatrixA.setlongxy(255,470);
   buttonMatrixA.SetOptions(2,3,1);
   buttonMatrixA.SetMoveObject(1,3,1,3);
-  buttonMatrixA.setstring('å†‚p®Ê† A');
+  buttonMatrixA.setstring('–ú–∞—Çp–∏—Ü–∞ A');
 
   buttonMatrixB.init;
   buttonMatrixB.setcorxy(260,450);
@@ -83,7 +83,7 @@ Var
   buttonMatrixB.setlongxy(380,470);
   buttonMatrixB.SetOptions(3,4,2);
   buttonMatrixB.SetMoveObject(2,4,2,4);
-  buttonMatrixB.setstring('å†‚p®Ê† B');
+  buttonMatrixB.setstring('–ú–∞—Çp–∏—Ü–∞ B');
 
   buttonSchet.init;
   buttonSchet.setcorxy(385,450);
@@ -91,7 +91,7 @@ Var
   buttonSchet.setlongxy(505,470);
   buttonSchet.SetOptions(4,5,3);
   buttonSchet.SetMoveObject(3,5,3,5);
-  buttonSchet.setstring('P•Ë•≠®•');
+  buttonSchet.setstring('P–µ—à–µ–Ω–∏–µ');
 
   buttonExitPr.init;
   buttonExitPr.setcorxy(510,450);
@@ -99,14 +99,14 @@ Var
   buttonExitPr.setlongxy(630,470);
   buttonExitPr.SetOptions(5,1,4);
   buttonExitPr.SetMoveObject(4,1,4,1);
-  buttonExitPr.setstring('ÇÎÂÆ§');
+  buttonExitPr.setstring('–í—ã—Ö–æ–¥');
  End;
  Procedure   LabaVichmat2.OutPutForm;
  Begin
   inherited OutPutForm;;
   OutPutObject;
   Setcolor(15);
-  outtextxy(10,6,'å•‚Æ§ É†„·†');
+  outtextxy(10,6,'–ú–µ—Ç–æ–¥ –ì–∞—É—Å–∞');
   PrintRaschet(0);
   result.Scan.showcursormouse;
  End;
@@ -160,11 +160,11 @@ Var
   TSI.Copy(200,150,440,250);
   FormBar(200,150,440,250,16,result.foncl,1,true);
   SetColor(15);
-  OutTextXY(210,156,'äÆ´®Á•·‚¢Æ „p†¢≠•≠®©');
+  OutTextXY(210,156,'–ö–æ–ª–∏—á–µ—Å—Ç–≤–æ —Ép–∞–≤–Ω–µ–Ω–∏–π');
   SetColor(0);
-  OutTextXY(245,176,'ÇÎ°•p®‚•');
-  OutTextXY(245,186,'™Æ´®Á•·‚¢Æ');
-  OutTextXY(245,196,'„p†¢≠•≠®©');
+  OutTextXY(245,176,'–í—ã–±–µp–∏—Ç–µ');
+  OutTextXY(245,186,'–∫–æ–ª–∏—á–µ—Å—Ç–≤–æ');
+  OutTextXY(245,196,'—Ép–∞–≤–Ω–µ–Ω–∏–π');
   result.scan.showcursormouse;
   buttonOkey.SetOptions(100,101,101);
   buttonOkey.setcorxy(250,220);
@@ -205,7 +205,7 @@ Var
   ScrenSave('save');
   FormBar(0,0,640,480,16,result.foncl,1,false);
   SetColor(15);
-  OutTextXY(10,6,'Ç¢Æ§ ¨†‚p®ÊÎ A');
+  OutTextXY(10,6,'–í–≤–æ–¥ –º–∞—Çp–∏—Ü—ã A');
   buttonOkey.setcorxy(510,450);
   buttonOkey.settextxy(545,456);
   buttonOkey.setlongxy(630,470);
@@ -293,7 +293,7 @@ Var
   ScrenSave('save');
   FormBar(0,0,640,480,16,result.foncl,1,false);
   SetColor(15);
-  OutTextXY(10,6,'Ç¢Æ§ ¨†‚p®ÊÎ B');
+  OutTextXY(10,6,'–í–≤–æ–¥ –º–∞—Çp–∏—Ü—ã B');
   buttonOkey.setcorxy(510,450);
   buttonOkey.settextxy(545,456);
   buttonOkey.setlongxy(630,470);

@@ -11,17 +11,17 @@ Interface
            DostupExtendedCode       : TypeHotKey;
 
            Str,StrTemp              : string;
-           VidStr                   : string; {вид стpоки в окне}
+           VidStr                   : string; {╨▓╨╕╨┤ ╤Б╤Вp╨╛╨║╨╕ ╨▓ ╨╛╨║╨╜╨╡}
 
-           Cr                       : byte;   {позиция куpсоpа}
-           CrVid,predcrvid          : byte;   {позиция куpсоpа начала копиpования}
-           LongVidStr               : byte;   {pазмеp окна ввода}
+           Cr                       : byte;   {╨┐╨╛╨╖╨╕╤Ж╨╕╤П ╨║╤Гp╤Б╨╛p╨░}
+           CrVid,predcrvid          : byte;   {╨┐╨╛╨╖╨╕╤Ж╨╕╤П ╨║╤Гp╤Б╨╛p╨░ ╨╜╨░╤З╨░╨╗╨░ ╨║╨╛╨┐╨╕p╨╛╨▓╨░╨╜╨╕╤П}
+           LongVidStr               : byte;   {p╨░╨╖╨╝╨╡p ╨╛╨║╨╜╨░ ╨▓╨▓╨╛╨┤╨░}
            Profil                   : byte;
-           VudelenieStr             : boolean;{Выделение стpоки для удаления}
-           StrDelete                : boolean;{Удаление стpоки}
-           PravkaStr                : boolean;{Hачало измения стpоки}
-           Pravka                   : boolean;{pазpешение на изменение стpоки}
-           Maxlong                  : byte;   {Максимальное число символов в стpоке}
+           VudelenieStr             : boolean;{╨Т╤Л╨┤╨╡╨╗╨╡╨╜╨╕╨╡ ╤Б╤Вp╨╛╨║╨╕ ╨┤╨╗╤П ╤Г╨┤╨░╨╗╨╡╨╜╨╕╤П}
+           StrDelete                : boolean;{╨г╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╤Б╤Вp╨╛╨║╨╕}
+           PravkaStr                : boolean;{H╨░╤З╨░╨╗╨╛ ╨╕╨╖╨╝╨╡╨╜╨╕╤П ╤Б╤Вp╨╛╨║╨╕}
+           Pravka                   : boolean;{p╨░╨╖p╨╡╤И╨╡╨╜╨╕╨╡ ╨╜╨░ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╨╡ ╤Б╤Вp╨╛╨║╨╕}
+           Maxlong                  : byte;   {╨Ь╨░╨║╤Б╨╕╨╝╨░╨╗╤М╨╜╨╛╨╡ ╤З╨╕╤Б╨╗╨╛ ╤Б╨╕╨╝╨▓╨╛╨╗╨╛╨▓ ╨▓ ╤Б╤Вp╨╛╨║╨╡}
 
            {metod}
            Constructor Init;

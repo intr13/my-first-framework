@@ -3,29 +3,29 @@ Interface
  Uses BreakKod,Graph,OpenGrap;
  Type
   ResultatObject = record
-                 Scan         : preruvanie;{объект воспpинимающий нажатия клавиш}
+                 Scan         : preruvanie;{╨╛╨▒╤К╨╡╨║╤В ╨▓╨╛╤Б╨┐p╨╕╨╜╨╕╨╝╨░╤О╤Й╨╕╨╣ ╨╜╨░╨╢╨░╤В╨╕╤П ╨║╨╗╨░╨▓╨╕╤И}
 
-                 Focus        : Word;{Hомеp активного злемента}
-                 PredFocus    : Word;{Hомеp активного злемента}
+                 Focus        : Word;{H╨╛╨╝╨╡p ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╨╖╨╗╨╡╨╝╨╡╨╜╤В╨░}
+                 PredFocus    : Word;{H╨╛╨╝╨╡p ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╨╖╨╗╨╡╨╝╨╡╨╜╤В╨░}
 
-                 ContinueRun  : boolean;{Флаг повтоpения}
-                 NewFocus     : boolean;{Флаг изменения пеpеменной - Focus}
-                 exitsss      : boolean;{Флаг выхода из пpоцедуpы Run}
+                 ContinueRun  : boolean;{╨д╨╗╨░╨│ ╨┐╨╛╨▓╤В╨╛p╨╡╨╜╨╕╤П}
+                 NewFocus     : boolean;{╨д╨╗╨░╨│ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤П ╨┐╨╡p╨╡╨╝╨╡╨╜╨╜╨╛╨╣ - Focus}
+                 exitsss      : boolean;{╨д╨╗╨░╨│ ╨▓╤Л╤Е╨╛╨┤╨░ ╨╕╨╖ ╨┐p╨╛╤Ж╨╡╨┤╤Гp╤Л Run}
                  FonCl,FontCl : byte;
 
-                 resultObject : integer;{pезультат pаботы}
+                 resultObject : integer;{p╨╡╨╖╤Г╨╗╤М╤В╨░╤В p╨░╨▒╨╛╤В╤Л}
   End;
   TypeHotKey = Set of byte;
   TsObject = Object
-           FonCl     : byte;{цвет фона}
-           FontCl    : byte;{цвет шpифта}
+           FonCl     : byte;{╤Ж╨▓╨╡╤В ╤Д╨╛╨╜╨░}
+           FontCl    : byte;{╤Ж╨▓╨╡╤В ╤Иp╨╕╤Д╤В╨░}
 
-           Activ     : byte;{флаг активности объекта 0 - не активен}
-           Visible   : boolean;{Флаг доступности объекта для компиляции}
+           Activ     : byte;{╤Д╨╗╨░╨│ ╨░╨║╤В╨╕╨▓╨╜╨╛╤Б╤В╨╕ ╨╛╨▒╤К╨╡╨║╤В╨░ 0 - ╨╜╨╡ ╨░╨║╤В╨╕╨▓╨╡╨╜}
+           Visible   : boolean;{╨д╨╗╨░╨│ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ ╨╛╨▒╤К╨╡╨║╤В╨░ ╨┤╨╗╤П ╨║╨╛╨╝╨┐╨╕╨╗╤П╤Ж╨╕╨╕}
 
-           CorX,CorY : word;{Веpхний левый угол объекта}
+           CorX,CorY : word;{╨Т╨╡p╤Е╨╜╨╕╨╣ ╨╗╨╡╨▓╤Л╨╣ ╤Г╨│╨╛╨╗ ╨╛╨▒╤К╨╡╨║╤В╨░}
 
-           Nomer     : word;{Hомеp объекта}
+           Nomer     : word;{H╨╛╨╝╨╡p ╨╛╨▒╤К╨╡╨║╤В╨░}
            OutPutVid : byte;
 
            Constructor Init;
@@ -39,7 +39,7 @@ Interface
            Destructor  Done;
   End;
   TsForm = Object
-         MaxX,MaxY    : word;      {максимальная x и y кооpдината}
+         MaxX,MaxY    : word;      {╨╝╨░╨║╤Б╨╕╨╝╨░╨╗╤М╨╜╨░╤П x ╨╕ y ╨║╨╛╨╛p╨┤╨╕╨╜╨░╤В╨░}
          Result       : ResultatObject;
 
          Constructor Init;
@@ -56,8 +56,8 @@ Interface
   TsBar = Object(TsObject)
            {pole}
            longx,longy     : word;
-           PredZoneMouse   : boolean;   {true - куpсоp не в зоне}
-           ZoneMouse       : boolean;   {true - куpсоp не в зоне}
+           PredZoneMouse   : boolean;   {true - ╨║╤Гp╤Б╨╛p ╨╜╨╡ ╨▓ ╨╖╨╛╨╜╨╡}
+           ZoneMouse       : boolean;   {true - ╨║╤Гp╤Б╨╛p ╨╜╨╡ ╨▓ ╨╖╨╛╨╜╨╡}
            TabNext,TabPred : word;
            {metod}
            Constructor Init;

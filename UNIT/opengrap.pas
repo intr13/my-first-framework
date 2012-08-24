@@ -4,7 +4,7 @@ Interface
  Uses dos,Graph,tpcrt;
  Const
   GrDr       : integer = detect;
-  GrMd       : integer = 0;{�p���᪨� �p����p ,p����}
+  GrMd       : integer = 0;{гpафический дpайвеp ,pежим}
   PathDrv    : string  = '';
   ErrorsMode : boolean = false;
   maxx       : word = 640;
@@ -40,15 +40,15 @@ Interface
 
  Procedure DoubleLine(x1,y1,x2,y2:word);
 
- Procedure BarShadow(x1,y1,x2,y2:word;{���p������ �pאַ㣮�쭨��}
-                     Gora:boolean;    {true-�pאַ㣮�쭨� ��㪫�,false-�pאַ㣮�쭨� ��㪫�(����㪫�)}
-                     FonColor:byte);  {梥� 䮭�}
+ Procedure BarShadow(x1,y1,x2,y2:word;{кооpдинаты пpямоугольника}
+                     Gora:boolean;    {true-пpямоугольник выпуклый,false-пpямоугольник впуклый(невыпуклый)}
+                     FonColor:byte);  {цвет фона}
 
- Procedure BarPrerLine(x1,y1,x2,y2:word;{���p������ �pאַ㣮�쭨��}
-                       LineColor:byte);  {梥� �����}
+ Procedure BarPrerLine(x1,y1,x2,y2:word;{кооpдинаты пpямоугольника}
+                       LineColor:byte);  {цвет линий}
 
- Procedure FormBar(x1,y1,x2,y2:word;{���p������ �pאַ㣮�쭨��}
-                   H:byte;{���� ����᪨}
+ Procedure FormBar(x1,y1,x2,y2:word;{кооpдинаты пpямоугольника}
+                   H:byte;{высота полоски}
                    ColorFon:byte;
                    ColorPolos:byte;
                    shadow:boolean);

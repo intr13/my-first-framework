@@ -39,7 +39,7 @@ Implementation
   buttonYes.setcorxy(230,230);
   buttonYes.setlongxy(310,250);
   buttonYes.settextxy(262,235);
-  buttonYes.setstring('Ñ†');
+  buttonYes.setstring('–î–∞');
 
   ButtonNo.init;
   buttonNo.SetOptions(2,1,1);
@@ -49,7 +49,7 @@ Implementation
   buttonNo.setcorxy(320,230);
   buttonNo.setlongxy(400,250);
   buttonNo.settextxy(348,235);
-  buttonNo.setstring('H•‚');
+  buttonNo.setstring('H–µ—Ç');
  End;
  Procedure   TsButtonExit.Run;
  Begin
@@ -66,10 +66,10 @@ Implementation
   setfillstyle(1,1);
   FormBar(220,170,410,260,16,foncl,1,true);
   setcolor(15);
-  outtextxy(230,176,'èÆ§‚¢•p¶§•≠®•');
+  outtextxy(230,176,'–ü–æ–¥—Ç–≤–µp–∂–¥–µ–Ω–∏–µ');
   setcolor(fontcl);
-  outtextxy(230,200,'Ñ•©·‚¢®‚•´Ï≠Æ ¢Î©‚®');
-  outtextxy(230,215,'®ß ØpÆ£p†¨¨Î?');
+  outtextxy(230,200,'–î–µ–π—Å—Ç–≤–∏—Ç–µ–ª—å–Ω–æ –≤—ã–π—Ç–∏');
+  outtextxy(230,215,'–∏–∑ –øp–æ–≥p–∞–º–º—ã?');
   res.scan.showcursormouse;
   res.focus:=buttonNo.nomer;
   res.predfocus:=0;

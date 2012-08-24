@@ -23,15 +23,15 @@ Interface
            HotExtendedCode : TypeHotKey;
 
            PressButton     : boolean;
-           ShowAct         : boolean;{‰´†£ Æ‚Æ°p†¶•≠®Ô †™‚®¢≠Æ·‚® Ì´•¨•≠‚†}
-           Profil          : byte;{0 - ™≠ÆØ™† ≠• ≠†¶†‚†,1 - ™≠ÆØ™† ≠†¶†‚†}
+           ShowAct         : boolean;{—Ñ–ª–∞–≥ –æ—Ç–æ–±p–∞–∂–µ–Ω–∏—è –∞–∫—Ç–∏–≤–Ω–æ—Å—Ç–∏ —ç–ª–µ–º–µ–Ω—Ç–∞}
+           Profil          : byte;{0 - –∫–Ω–æ–ø–∫–∞ –Ω–µ –Ω–∞–∂–∞—Ç–∞,1 - –∫–Ω–æ–ø–∫–∞ –Ω–∞–∂–∞—Ç–∞}
            MoveCr          : boolean;
            UstanovkaActiv  : boolean;
 
            {metod}
 
            Constructor Init;
-           {Æ‚Æ°p†¶•≠®• Ì´•¨•≠‚†}
+           {–æ—Ç–æ–±p–∞–∂–µ–Ω–∏–µ —ç–ª–µ–º–µ–Ω—Ç–∞}
            Procedure   OutPut(Var res:ResultatObject);virtual;
            Procedure   NoPress;virtual;
            Procedure   Press;virtual;

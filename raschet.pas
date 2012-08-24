@@ -43,8 +43,8 @@ Var
  Begin
   BarShadow(10,30,630,440,true,7);
   setcolor(0);
-  outtextxy(20,35,'ÇÎ¢Æ§ ‚p•„£Æ´Ï≠Æ© ¨†‚p®ÊÎ');
-  outtextxy(20,360,'ÇÎ¢Æ§ p•ß„´Ï‚†‚†');
+  outtextxy(20,35,'–í—ã–≤–æ–¥ —Çp–µ—É–≥–æ–ª—å–Ω–æ–π –º–∞—Çp–∏—Ü—ã');
+  outtextxy(20,360,'–í—ã–≤–æ–¥ p–µ–∑—É–ª—å—Ç–∞—Ç–∞');
   for i:=0 to razmer-1 do
       begin
        for j:=0 to razmer-1 do
